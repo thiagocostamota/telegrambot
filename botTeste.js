@@ -2,7 +2,7 @@ var nodemailer = require("nodemailer");
 const env = require("./.env");
 const Telegraf = require("telegraf");
 const bot = new Telegraf(env.token);
-const email = "noreplydaparaconfiar@gmail.com";
+const email = "";
 const puppeteer = require("puppeteer");
 
 
@@ -312,7 +312,7 @@ bot.action("AJ", (ctx) => {
     service: "gmail",
     auth: {
       user: email,
-      pass: "Dd6qWdD2De9ZxqV",
+      pass: "",
     },
   });
   ctx.deleteMessage();
